@@ -1,0 +1,13 @@
+language: go
+go:
+- '1.0'
+- '1.3'
+script:
+  - "go build -o loadbalancer"
+deploy:
+  provider: releases
+  api_key:
+    secure: XRsD8ais5ubblia0NeHOHU2M0xiA7x/rPionuM2pNPQvHjtRnoSlsc+eubXxVD7Mbc/6PJfhreF2iXVcHFnm+vxObPUKPjqqe3X7rtduKusH90h+3PP5ipc5J2GR9voR/Kv9OrxlZv5LH6PRSE8ExtpivaZR5gKId9lBacuE0hnDnJZ22LVjFq5fnthbtO+6r1Ow0+fHOW7O6EkJ2zsP0JTMZ72hwCajAU94046ZZU4xBUHo0KUUEBD6mapd03KPE8thVpInse8kOkWEkZtXwhbjh3SB495FiA77dd745ofXHRQYPAQ4aqVXpXPyEyKk+IsJ6eDzFK67Xu/GVhO7UaIZKP4d8wRkDs/7+lcaKmCXPwyw8xILjMhveRkHAEqsqX/IoALhUuKvCjDE6cCXfxgrJBCfFR3JQzfaEC8IjzB31YRCp3NPQHx0pzvDViwAEQIWvRx3iOgIXO1W2nnrym0M3/BsCe3WoQ12kLaf2GE0Oxy+s01r9t40HfR3JlDK4KfBQCJSwis2BZeqa31xNVblpm7jgOXhOyS75LWtLuv6dvXz1rfogG7CbfavTxYYGJuKFCVO6X9ocr90xCC5sokfUMk2g+gZyn8vL/6hTq9e834QBniTUjjXsPyWq/lwL/kFAGlAfCkP4fT9ZE6v+9jrUmUBAjiM+dt5xC3uEY4=
+  file: 'loadbanancer'
+  on:
+    repo: jonaylor89/LoadBalancer
