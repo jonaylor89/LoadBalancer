@@ -26,5 +26,5 @@ To add followings as load balanced backends
 - http://localhost:3033
 - http://localhost:3034
 ```bash
-simple-lb.exe --backends=http://localhost:3031,http://localhost:3032,http://localhost:3033,http://localhost:3034
+~$ simple-lb --backends=http://localhost:3031,http://localhost:3032,http://localhost:3033,http://localhost:3034
 ```
